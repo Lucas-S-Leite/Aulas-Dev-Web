@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, metadados, comentarios, layout, listas">
     <!-- FIM Metadados-->
+    <link rel="stylesheet" href="CSS/estilo.css">
     <title>Aulas Desenvolvimento Web I</title>
 </head>
 <body>
-    <header>
-        <a href="index.html" title="Voltar para o início"> <img src="imagem/Fatec_Zona_Leste.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho"></a>
+    <header class="flex-container" id="topo"> <!--header-->
+        <a href="index.html" title="Voltar para o início"> <img class="imagem" src="imagem/Fatec_Zona_Leste.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho"></a>
     </header>
-    <nav>
-        <ul>
+    <nav class="flex-container"> <!--nav-->
+        <ul class="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
             <li><a href="metadados.html">Metadados</a></li>           
@@ -26,13 +27,13 @@
             <li><a href="layout.html">Layout</a></li>
         </ul>        
     </nav>
-    <main>
+    <main class="flex-container" id="conteudo">
         <h1>Comentários</h1>
         <p>Comentários em HTML não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte HTML<br>
             Você pode adicionar comentários à sua fonte HTML usando a seguinte sintaxe.
         </p>
     </main>
-    <footer>
+    <footer class="flex-container" id="rodape">
         <p>Desenvolvido por Lucas Leite<br>
             Todos os Direitos reservados &copy; 2022
         </p>
