@@ -42,22 +42,22 @@
             </fieldset>
             <fieldset>
                 <legend>Endereço</legend>
-            <label for="rua">Rua</label><br>
-            <input type="text" name="rua" id="rua" placeholder="Rua Onde Mora"><br>            
-            <label for="numero">Número</label><br>
+            <label for="rua" required class="required">Rua</label><br>
+            <input type="text" name="rua" id="rua" placeholder="Rua Onde Mora" required class="required"><br>            
+            <label for="numero" required class="required">Número</label><br>
             <input type="number" name="numero" id="numero"><br>
-            <label for="complemento">Complemento</label><br>
+            <label for="complemento" required class="required">Complemento</label><br>
             <input type="text" name="complemento" id="complemento" placeholder="Bloco/Apartamento"><br>
-            <label for="bairro">Bairro</label><br>
+            <label for="bairro" required class="required">Bairro</label><br>
             <input type="text" name="bairro" id="bairro" placeholder="Nome do Bairro"><br>
-            <label for="cidade">Cidade</label><br>
+            <label for="cidade" required class="required">Cidade</label><br>
             <input type="text" name="cidade" id="cidade" placeholder="Cidade Onde Mora"><br>
-            <label for="estado">Estado</label><br>
+            <label for="estado" required class="required">Estado</label><br>
             <input type="text" name="estado" id="estado" placeholder="Ex:SP/RJ/BA/RS"><br>
         </fieldset>
         <fieldset>
             <legend>Mensagem</legend>
-            <label for="curso">Curso</label><br>
+            <label for="curso" required class="required">Curso</label><br>
             <select name="curso" id="curso" required>
                 <option value="ads">Análise e Desenvolvimento de Sistemas</option>
                 <option value="comex">Comércio Exterior</option>
@@ -68,7 +68,7 @@
                 <option value="log">Logística</option>
                 <option value="pol">Polímeros</option>
             </select><br>
-            <label for="assunto" id="assunto" required>Assunto</label><br>
+            <label for="assunto" id="assunto" required class="required">Assunto</label><br>
                 <select>
                     <option value="elogio">Elogio</option>
                     <option value="sugestao">Sugestão</option>

@@ -136,11 +136,13 @@ textarea{
     font-family: 'Times New Roman', Times, serif;
     padding: 10px;
 }
-.botoes{
 
-}
 button{
     padding: 20px;
     border-radius: 15px;
     border: none;
+}
+.required::after{
+    content: " *";
+    color: #e71b1b;
 }
