@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, metadados, comentarios, layout, listas">
+    <!-- FIM Metadados-->
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Aulas Desenvolvimento Web I</title>
+</head>
+<body>
+    <header class="flex-container">
+        <a href="index.html" title="Voltar para o início"> <img class="image" src="imagem/Fatec_Zona_Leste.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho"></a>
+    </header>
+    <nav class="flex-container">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+            <li><a href="metadados.html">Metadados</a></li>           
+            <li><a href="javascript:void(0)">Listas</a>         
+                <ul>
+                    <li><a href="ol.html">Lista Ordernada</a></li>
+                    <li><a href="ul.html">Lista Não-Ordenada</a></li>
+                </ul>
+            </li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>        
+    </nav>
+    <main class="flex-container" id="conteudo">
+        <h1>Formulário</h1>
+        <form action="" method="post" name="Contato" id="contato">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Nome completo" required><br>     
+            <label for="CPF">CPF</label><br>
+            <input type="text" name="CPF" id="CPF" placeholder="000.000.000-00"><br>
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="email" placeholder="Seu Email"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+            <label for="rua">Rua</label><br>
+            <input type="text" name="rua" id="rua" placeholder="Rua Onde Mora"><br>            
+            <label for="numero">Número</label><br>
+            <input type="number" name="numero" id="numero"><br>
+            <label for="complemento">Complemento</label><br>
+            <input type="text" name="complemento" id="complemento" placeholder="Bloco/Apartamento"><br>
+            <label for="bairro">Bairro</label><br>
+            <input type="text" name="bairro" id="bairro" placeholder="Nome do Bairro"><br>
+            <label for="cidade">Cidade</label><br>
+            <input type="text" name="cidade" id="cidade" placeholder="Cidade Onde Mora"><br>
+            <label for="estado">Estado</label><br>
+            <input type="text" name="estado" id="estado" placeholder="Ex:SP/RJ/BA/RS"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Mensagem</legend>
+            <label for="curso">Curso</label><br>
+            <select name="curso" id="curso" required>
+                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                <option value="comex">Comércio Exterior</option>
+                <option value="dsm">Desenvolvimento de Software Multiplataforma</option>
+                <option value="dpp">Desenvolvimento de Produtos Plásticos<option>
+                <option value="ge">Gestão Empresarial</option>
+                <option value="rh">Gestão de Recursos Humanos</option>
+                <option value="log">Logística</option>
+                <option value="pol">Polímeros</option>
+            </select><br>
+            <label for="assunto" id="assunto" required>Assunto</label><br>
+                <select>
+                    <option value="elogio">Elogio</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="reclamação">Reclamação</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea name="mensagem" id="mensagem" cols="40" rows="4"></textarea>  
+        </fieldset>
+
+        <div class="botoes">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+
+        
+        </form>           
+    </main>
+    <footer class="flex-container" id="rodape">
+        <p>Desenvolvido por Lucas Leite<br>
+            Todos os Direitos reservados &copy; 2022
+        </p>
+    </footer>
+</body>
+</html>
