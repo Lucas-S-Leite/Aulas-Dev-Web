@@ -14,7 +14,7 @@ body {
 
 #topo{
     width: 100%;
-    background-color: rgb(212, 212, 208);
+    background-color: #ddd;
     justify-content: center;
     height: auto;
 }
@@ -145,4 +145,24 @@ button{
 .required::after{
     content: " *";
     color: #e71b1b;
+}
+
+.acessibilidade{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.atalhos, .links_acess{
+    list-style: none;
+    display: inline-flex;
+    padding: 5px;    
+}
+
+.atalhos li, .links_acess li{
+    padding-left: 10px;
+}
+
+.links_acess{
+    margin-left: 60%;
 }
