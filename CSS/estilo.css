@@ -67,10 +67,15 @@ nav{
 .menu li ul{
     display: none;
     list-style: none;
-    position: absolute;
+    position: relative;
     top: 70%;
     left: 0;
     background-color: #e71b1b;
+}
+
+.menu li ul li{
+    display: block;
+    width: 170px;
 }
 
 .menu li:hover ul{
@@ -78,8 +83,7 @@ nav{
 }
 
 .menu li ul li{
-    display:block;
-    width: 170px;
+    
 }
 
 #conteudo{
@@ -165,4 +169,41 @@ button{
 
 .links_acess{
     margin-left: 60%;
+}
+
+label[for="bt_menu"]{
+    display: none;    
+}
+
+/* media queries acessibilidades */
+@media screen and (max-width: 1680px){
+    .links_acces{
+        margin-left: 45%;
+    }
+@media screen and (max-width: 1345px){
+        .links_acces{
+            margin-left: 40%;
+}
+@media screen and (max-width: 850px){
+    .atalhos {
+        display: none;
+    }
+    .links_acces{
+        margin: auto;
+    }
+}
+
+/* media queries menu responsivo */
+
+@media screen and (max-width: 740px){
+    .menu{
+        display:none;
+    }
+    label [for "bt_menu"]
+        display: block;
+}
+
+#bt_menu:checked ~ menu{
+    display: block;
+
 }
