@@ -18,7 +18,7 @@ function validar(){
         cadastro.confirm.focus
         return false
     }
-    const regex = ^/(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{6/10}$/ 
+    const regex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{6/10}$/ 
     //(?=.*?[A-Z]) = Mínimo uma letra maiúscula
     //(?=.*?[a-z]) = Mínimo uma letra minúscula
     //(?=.*?[0-9]) = Mínimo um número
