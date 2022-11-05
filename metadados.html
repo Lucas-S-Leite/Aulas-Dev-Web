@@ -39,6 +39,8 @@
         <a href="index.html" title="Voltar para o início"> <img class="imagem" src="imagem/Fatec_Zona_Leste.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho"></a>
     </header>
     <nav class="flex-container">
+        <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" name="bt_menu" id="bt_menu">
         <ul class="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
@@ -54,12 +56,17 @@
         </ul>        
     </nav>
     <main class="flex-container" id="conteudo">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Metadados</li>
+        </ul>
+        <section>
         <h1>Metadados</h1>
         <p>Metadados são dados externos à página que são usados ​​pelos navegadores (como exibir conteúdo), pelos mecanismos de pesquisa (palavras-chave) e outros serviços da web;
         </p>
             <p>Eles são integrados à página HTML pela tag &lt;meta&gt;
-
         </p>
+    </section>
     </main>
     <footer class="flex-container" id="rodape">
         <p>Desenvolvido por Lucas Leite<br>

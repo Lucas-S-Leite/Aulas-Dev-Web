@@ -73,6 +73,10 @@ nav{
     background-color: #e71b1b;
 }
 
+label[for="bt_menu"], #bt_menu{
+    display: none;    
+}
+
 .menu li ul li{
     display: block;
     width: 170px;
@@ -83,7 +87,34 @@ nav{
 }
 
 .menu li ul li{
-    
+    display: block;
+    width: 140px;
+}
+
+.breadcrumb{
+    padding-left: 2%;
+    list-style:none;
+}
+
+.breadcrumb li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #000;
+}
+
+.breadcrumb li a{
+    color: #555;
+}
+
+.breadcrumb li a:hover{
+    color:#000;
+}
+
+.breadcrumb li+li::before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #000;    
 }
 
 #conteudo{
@@ -171,18 +202,16 @@ button{
     margin-left: 60%;
 }
 
-label[for="bt_menu"]{
-    display: none;    
-}
-
 /* media queries acessibilidades */
 @media screen and (max-width: 1680px){
     .links_acces{
         margin-left: 45%;
     }
+}
 @media screen and (max-width: 1345px){
         .links_acces{
             margin-left: 40%;
+        }
 }
 @media screen and (max-width: 850px){
     .atalhos {
@@ -196,14 +225,53 @@ label[for="bt_menu"]{
 /* media queries menu responsivo */
 
 @media screen and (max-width: 740px){
-    .menu{
-        display:none;
+
+    nav{
+        justify-content: left;
     }
-    label [for "bt_menu"]
+    .menu{
+        display: none;
+    }
+
+    label[for="bt_menu"]{
         display: block;
+        margin: 2%;
+    }
+
+    #bt_menu:checked ~ .menu{
+        display: block;
+        width: 100%; /*corrigido*/
+
+       
+       
+    }
+
+    .menu li{
+        padding: 5% 1px; /*corrigido*/
+        
+        
+    }
+   
+    .menu li ul{
+        position:static; /*acrescentado*/
+        
+    }
+    .menu li ul li{
+        position: relative; /*acrescentado*/
+        display: block; /*acrescentado*/
+
+    }
+     
+    .imagem{
+        width: 60%;
+        height: auto;
+    }
+    
+  
+    video{
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
 }
 
-#bt_menu:checked ~ menu{
-    display: block;
-
-}

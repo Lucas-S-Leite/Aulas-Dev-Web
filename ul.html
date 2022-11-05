@@ -39,6 +39,8 @@
         <a href="index.html" title="Voltar para o início"> <img class="imagem" src="imagem/Fatec_Zona_Leste.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho"></a>
     </header>
     <nav class="flex-container">
+        <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" name="bt_menu" id="bt_menu">
         <ul class="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
@@ -54,11 +56,18 @@
         </ul>        
     </nav>
     <main class="flex-container" id="conteudo">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Listas</li>
+            <li>Lista não ordenada</li>
+        </ul>
         <h1>Listas Não-Ordenadas</h1>
+        <section>
         <p>Uma lista não-ordenada começa com a tag &lt;ul&gt;. Cada item da lista começa com a tag &lt;li&gt;.
         </p>
             <p>Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão.
         </p>
+        </section>
     </main>
     <footer class="flex-container" id="rodape">
         <p>Desenvolvido por Lucas Leite<br>
